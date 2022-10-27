@@ -1,0 +1,40 @@
+form {
+    background: #303030;
+    display: block;
+    border-radius: 20px;
+    width: 40%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: left;
+    padding: 5px 20px 20px;
+}
+
+
+input {
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #505050;
+    color: white;
+}
+
+input:focus{
+    border-color: white;
+}
+
+textarea {
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #505050;
+    color: white;
+}
+
+input::placeholder{
+    color: #A5A5A5;
+}
+
+textarea::placeholder{
+    color: #A5A5A5;
+}

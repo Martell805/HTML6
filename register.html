@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/images/logo.png">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="main" class="font-effect-neon"><strong>Электронная библиотека</strong></h1>
+        </header>
+
+        <form autocomplete="on" name="registration">
+            <fieldset>
+                <legend>Регистрация</legend>
+                <p>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" required autofocus placeholder="Отображаемое имя">
+                </p>
+                <p>
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" name="email" id="email" required placeholder="Электронная почта" pattern="*@*.*">
+                </p>
+                <p>
+                    <label for="password">Пароль:</label>
+                    <input type="password" name="password" id="password" required placeholder="Пароль">
+                </p>
+                <p>
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Телефон">
+                </p>
+                <p>
+                    <label for="birthday">Дата рождения:</label>
+                    <input type="datetime-local" name="birthday" id="birthday" min="1900-01-01" max="2023-01-01">
+                </p>
+                <p>
+                    <label for="city">Город:</label>
+                    <select name="city" id="city">
+                        <option value="moscow">Москва</option>
+                        <option value="petersburg">Питер</option>
+                        <option value="other">Другой</option>
+                    </select>
+
+                </p>
+                <p>
+                    <label for="passport">Файл со сканом паспорта:</label>
+                    <input type="file" name="passport" id="passport" accept="application/pdf">
+                </p>
+                <p>
+                    <label for="subscript">Подписка на уведомления:</label>
+                    <input type="checkbox" name="subscript" id="subscript" checked="checked">
+                </p>
+                <p>
+                    <label>Пол:</label> <br>
+                    <label for="male">Мужской</label>
+                    <input type="radio" name="sex" id="male"><br>
+                    <label for="female">Женский</label>
+                    <input type="radio" name="sex" id="female">
+                </p>
+                <p>
+                    <label for="info">Расскажите о себе:</label>
+                    <textarea name="info" id="info" cols="20" rows="2" maxlength="100" minlength="0" placeholder="Немного информации о вас"></textarea>
+                </p>
+                <div class="button-row">
+                    <button type="submit" name="submit" class="button1"> Зарегистрироваться </button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
